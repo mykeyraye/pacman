@@ -1,42 +1,49 @@
-# Python Pac-Man
+# Python Pac-Man (Pygame)
 
-A classic arcade game recreated in Python using the curses library.
+A small keyboard-controlled Pac-Man-style maze project written in Python using **Pygame**. Move through the maze and collect dots while avoiding walls.
 
-## Features
+## Current features
 
-* Navigate the maze with Pac-Man and eat all the dots.
-* Avoid the roaming ghosts.
-* Simple collisions – lose the game if a ghost catches you.
+- Arrow-key movement through a predefined maze
+- Dots disappear when collected
+- Wall and maze-boundary collision checks
 
-## Getting Started
+**Project status:** A playable prototype. Ghosts, lives, scoring, sound, and win conditions have **not** been implemented yet.
 
-### Prerequisites
+## Requirements
 
-* Python 3.x (https://www.python.org/downloads/)
-* curses library (Install using `pip install curses`)
+- Python 3
+- Pygame
 
-### Running the Game
+## Run locally
 
-1. Download or copy the code 
-2. Open a terminal or command prompt.
-3. Navigate to the directory with the code file.
-4. Execute: `python pacman.py`
+1. Download or clone this repository.
+2. Open a terminal in the project folder.
+3. Install Pygame:
 
-## How to Play
+   ```bash
+   python -m pip install pygame
+   ```
 
-Use the arrow keys to control Pac-Man:
+4. Run the game:
 
-* **Up:** Move Up
-* **Down:** Move Down
-* **Left:** Move Left
-* **Right:** Move Right
+   ```bash
+   python PM.py
+   ```
 
-## Future Plans
+On some macOS/Linux installations, use `python3` instead of `python`.
 
-* Add levels with different layouts
-* Power-ups to eat ghosts
-* Scorekeeping 
+## Controls
 
-## Contact
+Use the **arrow keys** to move. Close the game window to exit.
 
-Feel free to submit issues or suggestions on the [GitHub repository](https://github.com/mykeyraye/PM). 
+## Roadmap
+
+- [ ] Track score and remaining dots
+- [ ] Add a win screen
+- [ ] Add ghosts and collision/lives
+- [ ] Improve maze alignment and presentation
+
+## Notes
+
+This is a learning project, not an official Pac-Man release. The original project code is preserved in GitHub's commit history.
