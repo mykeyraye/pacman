@@ -79,6 +79,12 @@ def move_pacman():
     elif direction == 'DOWN':
         next_y += 1
 
+    # Keep Pac-Man inside the maze, including shorter maze rows.
+    if not (0 <= next_y < len(maze)):
+        return
+    if not (0 <= next_x < len(maze[next_y])):
+        return
+
     # Check for wall collision
     if maze[next_y][next_x] != '#':
         pacman_x, pacman_y = next_x, next_y
