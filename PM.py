@@ -7,7 +7,7 @@ pygame.init()
 # Constants
 SCREEN_WIDTH, SCREEN_HEIGHT = 620, 580  # Adjusted for the size of the maze
 BACKGROUND_COLOR = (0, 0, 0)
-WALL_COLOR = (0, 0, 255)
+WALL_COLOR = (0, 255, 255)
 DOT_COLOR = (255, 200, 200)
 PACMAN_COLOR = (255, 255, 0)
 FPS = 10  # Frame rate
